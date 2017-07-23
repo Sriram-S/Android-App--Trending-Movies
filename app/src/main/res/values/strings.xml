@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">MoviesNearYou</string>
+    <string name="name">Movie Name</string>
+    <string name="date">Movie Release Date</string>
+    <string name="votes">Total Number of Votes</string>
+    <string name="rating">Rating</string>
+    <string name="overview">Movie Plot</string>
+    <string name="URL_POPULAR">https://api.themoviedb.org/3/movie/popular?api_key=b623ae71054e3775de75f2d0393aa3d0</string>
+    <string name="URL_TOP">"https://api.themoviedb.org/3/movie/top_rated?api_key=b623ae71054e3775de75f2d0393aa3d0"</string>
+    <string name="URL_GETKEY">https://api.themoviedb.org/3/movie/</string>
+    <string name="API_KEY"></string>
+    <string name="Network_Error">No Network Connection</string>
+    <string name="NetworkAction">Open Settings</string>
+    <string name="jsonmovieid">id</string>
+    <string name="Image_Path">http://image.tmdb.org/t/p/w185//</string>
+    <string name="RatingSort">Sort By Rating</string>
+    <string name="RatingPopular">Sort By Popular</string>
+    <string name="selected">Already sorted by selected option</string>
+    <string name="jsonresults">results</string>
+    <string name="jsonposterpath">poster_path</string>
+    <string name="jsonoverview">overview</string>
+    <string name="reviewscall">/reviews?api_key=</string>
+    <string name="jsonrelease">release_date</string>
+    <string name="jsontitle">title</string>
+    <string name="jsonrating">vote_average</string>
+    <string name="jsontotalvote">vote_count</string>
+    <string name="jsonvideoid">key</string>
+    <string name="jsonvideoname">name</string>
+    <string name="imagename">1.jpg</string>
+    <string name="titlevideos">Movie Trailers/Teasers</string>
+    <string name="videos">/videos?api_key=</string>
+    <string name="reviewtitle">Reviews</string>
+    <string name="videotitle">Trailers/Teasers</string>
+    <string name="authorby">Review by</string>
+    <string name="review">View Movie Reviews</string>
+    <string name="video">View Trailers</string>
+    <string name="favdetailstitle">Favourites List</string>
+    <string name="deleteall">Delete All</string>
+    <string name="delete">Delete Favourite</string>
+    <string name="favs">Add to Favourites</string>
+    <string name="fav">View Favourites</string>
+    <string name="video_url_youtube">https://www.youtube.com/watch?v=</string>
+    <string name="jsonauthorreview">author</string>
+    <string name="jsoncontentreview">content</string>
+    <string name="jsonurlreview">url</string>
+    <string name="noreviews">No Reviews available</string>
+    <string name="empty">No Movies added to Favourites! Click on Add to Favourites to add movies to the list</string>
+    <string name="details">Details</string>
+    <string name="namedetail">Name</string>
+    <string name="posterdetail">posterimage</string>
+    <string name="overviewdetail">Overview</string>
+    <string name="ratingdetail">rating</string>
+    <string name="votesdetail">votes</string>
+    <string name="iddetail">ID</string>
+    <string name="datedetail">date</string>
+    <string name="adddedinfav">Already added in favourites list</string>
+    <string name="titlename">Movie Details</string>
+    <string name="addedsuc">Added Successfully!</string>
+    <string name="erroradding">Error! in adding fav! Try Again</string>
+    <string name="alreadypresent">Already added in favourites list</string>
+    <string name="deletemsg">Deleted All Successfully</string>
+    <string name="norecord">No Records Found!</string>
+    <string name="moviename">Movie Name</string>
+    <string name="movieplot">Movie Plot</string>
+    <string name="release">Release Date</string>
+    <string name="Ratings">Rating</string>
+    <string name="Votes">Votes</string>
+    <string name="deleteone">Deleted Successfully</string>
+    <string name="uncertain">Unable to Delete/Record Not Found</string>
+    <string name="deleteallfav">Deleted All Favourites Successfully</string>
+    <string name="reqmethod">GET</string>
+    <string name="youtube">vnd.youtube:</string>
+    <string name="IDs">id</string>
+    <string name="namepass">name</string>
+    <string name="ratingpass">rating</string>
+    <string name="posterpass">poster</string>
+    <string name="votespass">votes</string>
+    <string name="datepass">date</string>
+    <string name="overviewpass">Overview</string>
+    <string name="moviecolon">Movie Name:</string>
+    <string name="ratingscolon">Ratings:</string>
+</resources>

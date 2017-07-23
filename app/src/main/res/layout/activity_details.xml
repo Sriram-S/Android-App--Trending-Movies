@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/collapsingappbar"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:background="@color/colorPrimary">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingtool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    android:titleTextColor="@color/colorPrimary"
+                    app:layout_collapseMode="pin" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/collapsingappbar"
+            android:gravity="fill_vertical"
+            app:layout_behavior="com.example.hp.moviesnearyou.layoutbehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linear"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movietitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/name"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/moviename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieoverviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/overview"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/movieoverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/moviedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/date"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/movierelease"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movievotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/votes"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/movievote"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieratings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/rating"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/movierating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/detailstextcolor"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reviews"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/review" />
+
+                    <Button
+                        android:id="@+id/video"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/video" />
+
+                    <Button
+                        android:id="@+id/fav"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/favs" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
